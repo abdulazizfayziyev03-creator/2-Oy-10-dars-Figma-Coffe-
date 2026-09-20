@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgba(243, 215, 183, 1);
+    color: #333;
+    color: rgb(31, 21, 52);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color:  rgba(243, 215, 183, 1);
+    padding: 20px 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #555;
+    font-size: 14px;
+}
+
+.q {
+    font-weight: 700;
+}
+
+.q:hover {
+    color: red;
+}
+
+.q:active {
+    color: blue;
+}
+
+
+.hero {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 60px;
+    gap: 40px;
+}
+
+
+.hero-container {
+    flex: 1;
+    max-width: 500px;
+}
+
+.hero-title {
+    font-family: 'Fraunces', serif;
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 1.1;
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+.hero-description {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333333;
+    margin-bottom: 36px;
+    max-width: 420px;
+}
+
+.hero-btn {
+    font-family: 'Barlow', sans-serif;
+    background-color: #0E7A5D;
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.hero-btn:hover {
+    background-color: #000000;
+}
+
+.hero-btn:active {
+    background-color: #0E7A5D;
+    transform: scale(0.98);
+}
+
+.hero-image-wrapper {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-img {
+    width: 100%;
+    max-width: 500px;
+    height: 450px;
+    border-radius: 8px;
+}
+
+.hero-badge {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.badge-img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+
+.hero-content {
+    max-width: 100%;
+}
+
+.hero-title {
+    font-size: 36px;
+}
+
+.hero-description {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-image-wrapper {
+    left: 400px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.hero-badge {
+    top: -20px;
+    left: 10px;
+}
+
+.super_section {
+    background-color: #FFFFFF;
+    margin-top: 80px;
+    width: 1540px;
+    height: 1798px;
+}
+
+.h1 {
+    color: rgba(0, 0, 0, 1);
+    margin-bottom: 42px;
+    padding-top: 108px;
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0px;
+}
+
+.super_container {
+    margin-top: 42px;
+}
+
+.coffee-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+}
+
+.coffee-card.reverse {
+    flex-direction: row-reverse;
+}
+
+.coffee-image {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coffee-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0px 15px 12px rgba(0, 0, 0, 0.15));
+}
+
+
+.coffee-info {
+    max-width: 340px;
+}
+
+.coffee-title {
+    font-family: 'Roboto', serif;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #2c2d2e;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+}
+
+.coffee-dectator {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333333;
+}
+
+@media (max-width: 768px) {
+    .container {
+        gap: 50px;
+    }
+
+    .coffee-card,
+    .coffee-card.reverse {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .coffee-info {
+        max-width: 100%;
+    }
+}
+
+.footer {
+    background-color: rgba(243, 215, 183, 1);
+    color: #000000;
+    padding: 25px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socials a {
+    color: #333;
+    color: rgb(31, 21, 52);
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 14px;
+}
